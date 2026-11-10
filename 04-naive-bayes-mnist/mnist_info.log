@@ -1,0 +1,7 @@
+2026-11-10 13:21:17,460 - --- MNIST Dataset Info ---
+2026-11-10 13:21:17,460 - Dataset downloaded. Total samples: 70000, Features per sample: 784.
+2026-11-10 13:21:17,461 - X (Data) shape: (70000, 784)
+2026-11-10 13:21:17,461 - y (Target) shape: (70000,)
+2026-11-10 13:21:21,340 - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-10 13:21:21,340 - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2026-11-10 13:21:21,343 - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
