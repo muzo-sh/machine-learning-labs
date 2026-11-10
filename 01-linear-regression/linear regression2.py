@@ -1,7 +1,9 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
+
 
 print("Starting Part 2: Multiple Linear Regression...\n")
 
@@ -58,3 +60,13 @@ errors_test = np.abs(y_test.values - y_pred_from_test)
 print("\n--- Errors when using Test Model to predict Test Data ---")
 print(f"Average Error: {np.mean(errors_test):.4f} years")
 print(f"Standard Deviation of Errors: {np.std(errors_test):.4f} years")
+
+plt.figure(figsize=(7, 4))
+plt.scatter(y_test, y_pred_from_train, color='blue', alpha=0.5, label='Predicted vs Actual')
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2, label='Ideal Fit')
+plt.title('Multiple Linear Regression: Actual vs Predicted Life Expectancy')
+plt.xlabel('Actual Life Expectancy')
+plt.ylabel('Predicted Life Expectancy')
+plt.legend()
+plt.tight_layout()
+plt.show()
